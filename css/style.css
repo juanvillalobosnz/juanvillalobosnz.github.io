@@ -254,7 +254,7 @@
     padding-left: 0;
   }
 
-  .navbar-expand-lg .navbar-nav .nav-link.contact {
+  .navbar-expand-lg .navbar-nav .nav-link.contacto {
     border: 2px solid var(--secondary-color);
     border-radius: var(--border-radius-large);
     color: var(--secondary-color);
@@ -262,8 +262,8 @@
     padding: 0.6em 2em 0.8em 2em;
   }
 
-  .navbar-expand-lg .navbar-nav .nav-link.contact:hover,
-  .navbar-expand-lg .navbar-nav .nav-link.contact.active {
+  .navbar-expand-lg .navbar-nav .nav-link.contacto:hover,
+  .navbar-expand-lg .navbar-nav .nav-link.contacto.active {
     background: var(--secondary-color);
     color: var(--white-color);
   }
@@ -485,11 +485,11 @@
 
 
   /*---------------------------------------
-     CONTACT              
+     contacto              
   -----------------------------------------*/
 
   .newsletter-form .form-control,
-  .contact-form .form-control {
+  .contacto-form .form-control {
     box-shadow: none;
     background: var(--servicio-bg);
     border: 0;
@@ -498,7 +498,7 @@
   }
 
   .newsletter-form button,
-  .contact-form #submit-button {
+  .contacto-form #submit-button {
     background: var(--primary-color);
     border-radius: var(--border-radius-large);
     color: var(--white-color);
@@ -577,32 +577,32 @@
 
 
   
-  /* Contact Section
+  /* contacto Section
 --------------------------------*/
 
-#contact {
+#contacto {
   padding: 30px 0;
 }
 
-#contact .contact-info {
+#contacto .contacto-info {
   margin-bottom: 20px;
   text-align: center;
 }
 
-#contact .contact-info i {
+#contacto .contacto-info i {
   font-size: 60px;
   display: inline-block;
   margin-bottom: 10px;
   color: var(--secondary-color);
 }
 
-#contact .contact-info address,
-#contact .contact-info p {
+#contacto .contacto-info address,
+#contacto .contacto-info p {
   margin-bottom: 0;
   color: #000;
 }
 
-#contact .contact-info h2 {
+#contacto .contacto-info h2 {
   font-size: 18px;
   margin-bottom: 15px;
   font-weight: bold;
@@ -610,7 +610,7 @@
   color: #999;
 }
 
-#contact .contact-info a {
+#contacto .contacto-info a {
   color: #000;
 }
 
@@ -618,24 +618,24 @@
   margin-top: 4rem !important;
 }
 
-#contact .contact-info a:hover {
+#contacto .contacto-info a:hover {
   color: var(--secondary-color);
 }
 
-#contact .contact-address,
-#contact .contact-phone,
-#contact .contact-email {
+#contacto .contacto-address,
+#contacto .contacto-phone,
+#contacto .contacto-email {
   margin-bottom: 20px;
 }
 
-#contact .form #sendmessage.show,
-#contact .form #errormessage.show,
-#contact .form .show {
+#contacto .form #sendmessage.show,
+#contacto .form #errormessage.show,
+#contacto .form .show {
   display: block;
 }
 
-#contact .form input,
-#contact .form textarea {
+#contacto .form input,
+#contacto .form textarea {
   padding: 10px 14px;
   border-radius: 0;
   box-shadow: none;
@@ -748,7 +748,7 @@
       display: inline-block;
     }
 
-    .navbar-expand-lg .navbar-nav .nav-link.contact {
+    .navbar-expand-lg .navbar-nav .nav-link.contacto {
       margin: 1em 0;
     }
 
