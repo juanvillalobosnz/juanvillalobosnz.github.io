@@ -254,7 +254,7 @@
     padding-left: 0;
   }
 
-  .navbar-expand-lg .navbar-nav .nav-link.contacto {
+  .navbar-expand-lg .navbar-nav .nav-link.contact {
     border: 2px solid var(--secondary-color);
     border-radius: var(--border-radius-large);
     color: var(--secondary-color);
@@ -262,8 +262,8 @@
     padding: 0.6em 2em 0.8em 2em;
   }
 
-  .navbar-expand-lg .navbar-nav .nav-link.contacto:hover,
-  .navbar-expand-lg .navbar-nav .nav-link.contacto.active {
+  .navbar-expand-lg .navbar-nav .nav-link.contact:hover,
+  .navbar-expand-lg .navbar-nav .nav-link.contact.active {
     background: var(--secondary-color);
     color: var(--white-color);
   }
@@ -485,11 +485,11 @@
 
 
   /*---------------------------------------
-     contacto              
+     contact              
   -----------------------------------------*/
 
   .newsletter-form .form-control,
-  .contacto-form .form-control {
+  .contact-form .form-control {
     box-shadow: none;
     background: var(--servicio-bg);
     border: 0;
@@ -498,7 +498,7 @@
   }
 
   .newsletter-form button,
-  .contacto-form #submit-button {
+  .contact-form #submit-button {
     background: var(--primary-color);
     border-radius: var(--border-radius-large);
     color: var(--white-color);
@@ -577,32 +577,32 @@
 
 
   
-  /* contacto Section
+  /* contact Section
 --------------------------------*/
 
-#contacto {
+#contact {
   padding: 30px 0;
 }
 
-#contacto .contacto-info {
+#contact .contact-info {
   margin-bottom: 20px;
   text-align: center;
 }
 
-#contacto .contacto-info i {
+#contact .contact-info i {
   font-size: 60px;
   display: inline-block;
   margin-bottom: 10px;
   color: var(--secondary-color);
 }
 
-#contacto .contacto-info address,
-#contacto .contacto-info p {
+#contact .contact-info address,
+#contact .contact-info p {
   margin-bottom: 0;
   color: #000;
 }
 
-#contacto .contacto-info h2 {
+#contact .contact-info h2 {
   font-size: 18px;
   margin-bottom: 15px;
   font-weight: bold;
@@ -610,7 +610,7 @@
   color: #999;
 }
 
-#contacto .contacto-info a {
+#contact .contact-info a {
   color: #000;
 }
 
@@ -618,24 +618,24 @@
   margin-top: 4rem !important;
 }
 
-#contacto .contacto-info a:hover {
+#contact .contact-info a:hover {
   color: var(--secondary-color);
 }
 
-#contacto .contacto-address,
-#contacto .contacto-phone,
-#contacto .contacto-email {
+#contact .contact-address,
+#contact .contact-phone,
+#contact .contact-email {
   margin-bottom: 20px;
 }
 
-#contacto .form #sendmessage.show,
-#contacto .form #errormessage.show,
-#contacto .form .show {
+#contact .form #sendmessage.show,
+#contact .form #errormessage.show,
+#contact .form .show {
   display: block;
 }
 
-#contacto .form input,
-#contacto .form textarea {
+#contact .form input,
+#contact .form textarea {
   padding: 10px 14px;
   border-radius: 0;
   box-shadow: none;
@@ -748,7 +748,7 @@
       display: inline-block;
     }
 
-    .navbar-expand-lg .navbar-nav .nav-link.contacto {
+    .navbar-expand-lg .navbar-nav .nav-link.contact {
       margin: 1em 0;
     }
 
