@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&family=Ubuntu+Mono&display=swap');
 
   :root {
-    --primary-color:        #3f05aad0;
-    --secondary-color:      #00FFFF;
+    --primary-color:        #00c1d3;
+    --secondary-color:      #4effff;
     --white-color:          #ffffff;
-    --dark-color:           #8300fd;
-    --servicio-bg:           #f0f8ff;
-    --menu-bg:              #8c00ff;
+    --dark-color:           #000000;
+    --servicio-bg:          #ffffff;
+    --menu-bg:              #ffffff;
 
-    --title-color:          #15141a;
+    --title-color:          #ffffff;
     --gray-color:           #ffffff;
     --link-color:           #ffffff;
     --p-color:              #ffffff;
@@ -25,7 +25,7 @@
     --base-font-size:       16px;
     --menu-font-size:       18px;
 
-    --border-radius-large:  14px 2px 14px 2px;
+    --border-radius-large:  5px 1px 5px  1px;
     --border-radius-small:  5px;
   }
 
@@ -34,13 +34,21 @@
     font-family: var(--base-font-family);
   }
 
+   .containerimg{
+    display: flex;
+    justify-content: center;
+   }
+
 
   /* Back to top button */
 
 .back-to-top {
   position: fixed;
   display: none;
-  background: #3f05aad0;
+  background: #00C9FF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #92FE9D, #00C9FF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #92FE9D, #00C9FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   color: #fff;
   padding: 6px 12px 9px 12px;
   font-size: 16px;
@@ -51,7 +59,10 @@
 }
 
 .back-to-top:focus {
-  background: #3f05aad0;
+  background: #00C9FF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #92FE9D, #00C9FF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #92FE9D, #00C9FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   color: #fff;
   outline: none;
 }
