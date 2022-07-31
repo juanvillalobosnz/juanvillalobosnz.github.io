@@ -7,7 +7,6 @@ window.addEventListener('load', () => {
     /*const checkbox_web = document.querySelector("input[name=web]");
     const checkbox_software = document.querySelector("input[name=software]");
     const checkbox_pruebas = document.querySelector("input[name=pruebas]");
-    const checkbox_mobile = document.querySelector("input[name=mobile]");
     */
   
     nameInput.isValid = () => isValidName(nameInput.value.trim() && nameInput.value.trim());
@@ -61,7 +60,6 @@ window.addEventListener('load', () => {
       e.preventDefault();
       shouldValidate = true;
       validateInputs();
-      validateCheckBox();
       if (isFormValid) {
         //btn.value = 'Enviando...';
   
