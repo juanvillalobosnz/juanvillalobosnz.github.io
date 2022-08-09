@@ -172,7 +172,7 @@ strong {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  background: none repeat scroll 0 0 var(--secondary-color);
+  background: none repeat scroll 0 0 var((--white-color);
 }
 
 .spinner {
