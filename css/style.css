@@ -172,7 +172,7 @@ strong {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  background: none repeat scroll 0 0 var((--white-color);
+  background: none repeat scroll 0 0 var(--white-color);
 }
 
 .spinner {
@@ -192,8 +192,8 @@ strong {
   margin-top: -10px;
   margin-left: -10px;
   border-radius: 50%;
-  border: 1px solid var(--border-color);
-  border-top-color: var(--white-color);
+  border: 1px solid var(--secondary-color);
+  border-top-color: var(--primary-color);
   animation: spinner .9s linear infinite;
 }
 
