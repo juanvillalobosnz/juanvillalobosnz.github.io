@@ -192,8 +192,8 @@ strong {
   margin-top: -10px;
   margin-left: -10px;
   border-radius: 50%;
-  border: 1px solid var(--secondary-color);
-  border-top-color: var(--primary-color);
+  border: 1px solid var(--border-color);
+  border-top-color: var(--white-color);
   animation: spinner .9s linear infinite;
 }
 
@@ -908,7 +908,7 @@ estilos validacion  del formulario
 
 .error {
   color: rgb(255, 0, 81);
-  font-size: 14px;
+  font-size: 12px;
   margin: 7px;
 }
 
