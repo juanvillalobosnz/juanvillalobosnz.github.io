@@ -5,6 +5,8 @@ window.addEventListener("load", () => {
   const emailInput = document.querySelector("input[name='email']");
   const subjectInput = document.querySelector("input[name='subject']");
   const messageInput = document.querySelector("textarea[name='message']");
+  let currentLanguage = "es"; // Establecer el idioma por defecto a español
+
 
   nameInput.isValid = () => isValidName(nameInput.value.trim() && nameInput.value.trim());
   emailInput.isValid = () => isValidEmail(emailInput.value.trim());
@@ -60,7 +62,7 @@ window.addEventListener("load", () => {
     shouldValidate = true;
     validateInputs();
     if (isFormValid) {
-      const serviceID = "default_service";
+      const serviceID = "default_servic";
       const templateID = "template_jmgbgzd";
 
       emailjs.sendForm(serviceID, templateID, form).then(
@@ -69,8 +71,7 @@ window.addEventListener("load", () => {
           success.style.display = "block";
           showAlert("Your message has been sent successfully!");
         },
-        (err) => {
-          btn.value = "Send";
+        (err) => { 
           danger.style.display = "block";
           console.log(JSON.stringify(err));
         }

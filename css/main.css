@@ -116,8 +116,6 @@ input.check-toggle-round-flat+label:after {
   transition: margin 0.2s;
 }
 
-input.check-toggle-round-flat:checked+label {}
-
 input.check-toggle-round-flat:checked+label:after {
   margin-left: 44px;
 }
@@ -214,4 +212,19 @@ estilos validacion  del formulario
   transition: .3s;
   animation: buttons .3s linear;
   display: none;
+}
+
+/* CSS */
+input:checked ~ .dot {
+  transform: translateX(100%);
+}
+
+input:checked ~ .block {
+  background-color: #34d399;
+}
+
+@media (hover: none) {
+  #flagImage:active {
+    transform: scale(1.2) rotate(15deg);
+  }
 }
