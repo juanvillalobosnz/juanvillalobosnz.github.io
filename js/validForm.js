@@ -1,11 +1,9 @@
 window.addEventListener("load", () => {
-  const btn = document.getElementById("button");
   const form = document.getElementById("form");
   const nameInput = document.querySelector("input[name='name']");
   const emailInput = document.querySelector("input[name='email']");
   const subjectInput = document.querySelector("input[name='subject']");
   const messageInput = document.querySelector("textarea[name='message']");
-  let currentLanguage = "es"; // Establecer el idioma por defecto a español
 
 
   nameInput.isValid = () => isValidName(nameInput.value.trim() && nameInput.value.trim());
@@ -69,7 +67,6 @@ window.addEventListener("load", () => {
         () => {
           setTimeout(clearInputs, 2000);
           success.style.display = "block";
-          showAlert("Your message has been sent successfully!");
         },
         (err) => { 
           danger.style.display = "block";
@@ -88,24 +85,3 @@ window.addEventListener("load", () => {
     input.addEventListener("input", validateInputs)
   );
 });
-
-function showAlert(message) {
-  // Verificar si ya existe una alerta con el mismo mensaje
-  const existingAlerts = document.querySelectorAll(".alert-success");
-  if (
-    Array.from(existingAlerts).some(
-      (alert) => alert.textContent.trim() === message
-    )
-  ) {
-    return;
-  }
-
-  // Crear una nueva alerta
-  const alert = document.createElement("div");
-  alert.className = "alert-success";
-  alert.innerHTML = `<p>${message}</p>`;
-  form.appendChild(alert);
-
-  // Eliminar la alerta después de 4 segundos
-  setTimeout(() => form.removeChild(alert), 4000);
-}
