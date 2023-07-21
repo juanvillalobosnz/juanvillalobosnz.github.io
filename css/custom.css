@@ -641,6 +641,22 @@ video {
   left: -0.25rem;
 }
 
+.left-0 {
+  left: 0px;
+}
+
+.left-0\.5 {
+  left: 0.125rem;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.top-0\.5 {
+  top: 0.125rem;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -839,6 +855,10 @@ video {
   height: 100%;
 }
 
+.w-10 {
+  width: 2.5rem;
+}
+
 .w-4 {
   width: 1rem;
 }
@@ -849,6 +869,10 @@ video {
 
 .w-6 {
   width: 1.5rem;
+}
+
+.w-8 {
+  width: 2rem;
 }
 
 .w-full {
@@ -1840,6 +1864,11 @@ video {
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
 
+.bg-gray-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+}
+
 .bg-gray-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
@@ -2670,6 +2699,10 @@ video {
   transition-duration: 300ms;
 }
 
+.duration-500 {
+  transition-duration: 500ms;
+}
+
 .ease-in {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
@@ -2787,9 +2820,6 @@ input.check-toggle-round-flat+label:after {
   transition: margin 0.2s;
 }
 
-input.check-toggle-round-flat:checked+label {
-}
-
 input.check-toggle-round-flat:checked+label:after {
   margin-left: 44px;
 }
@@ -2883,6 +2913,22 @@ estilos validacion  del formulario
   transition: .3s;
   animation: buttons .3s linear;
   display: none;
+}
+
+/* CSS */
+
+input:checked ~ .dot {
+  transform: translateX(100%);
+}
+
+input:checked ~ .block {
+  background-color: #34d399;
+}
+
+@media (hover: none) {
+  #flagImage:active {
+    transform: scale(1.2) rotate(15deg);
+  }
 }
 
 @media (min-width: 640px) {

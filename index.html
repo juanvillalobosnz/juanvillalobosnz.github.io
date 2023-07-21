@@ -11,17 +11,32 @@
 </head>
 
 <body>
+
   <nav aria-label="Site Nav" class="mx-auto flex max-w-3xl items-center justify-between p-4">
     <a href="index.html" class="gap-3 text-lg font-medium">Jair Villalobos</a>
 
     <ul class="flex items-center gap-2 text-sm font-medium text-white-500">
       <li class="hidden lg:block">
-        <a class="rounded-full px-3 py-2" href="index.html"> Home </a>
+        <a data-translate="home" class="rounded-full px-3 py-2" href="index.html">Home</a>
       </li>
 
-      <li><a class="rounded-full px-3 py-2" href="#projects"> Projects </a></li>
+      <li>
+        <a data-translate="projects" class="rounded-full px-3 py-2" href="#projects">Projects</a>
+      </li>
+
+      <label for="toggleLanguage" class="flex items-center cursor-pointer">
+        <div class="relative hidden">
+          <input type="checkbox" id="toggleLanguage" class="sr-only" />
+          <div class="block bg-gray-600 w-10 h-5 rounded-full"></div>
+          <div class="dot absolute left-0.5 top-0.5 bg-white w-4 h-4 rounded-full transition"></div>
+        </div>
+        <img id="flagImage" class="w-8 h-5 transition duration-500 ease-in-out transform"
+          src="https://s.w.org/images/core/emoji/13.1.0/svg/1f1fa-1f1f8.svg" alt="Bandera del idioma actual" />
+      </label>
+
     </ul>
   </nav>
+
 
   <!--HERO JAIR-->
   <section class="bg-gray-900 text-white">
@@ -29,12 +44,13 @@
       <div class="mx-auto max-w-3xl text-center">
         <h1
           class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl">
-          <span class="sm:blocka">I am a software developer</span>
+          <span data-translate="tagline" class="sm:blocka">I am a software developer</span>
         </h1>
         <p id="typewriter" class="typewriter mx-auto mt-4 max-w-xl sm:text-xl sm:leading-relaxed"></p>
 
         <!-- Button CV -->
-        <a class="mt-4 inline-block rounded-full border border-cyan-600 px-12 py-4 text-sm font-medium text-cyan-600 hover:bg-cyan-600 hover:text-white focus:outline-none focus:ring active:bg-cyan-500"
+        <a data-translate="btncv"
+          class="mt-4 inline-block rounded-full border border-cyan-600 px-12 py-4 text-sm font-medium text-cyan-600 hover:bg-cyan-600 hover:text-white focus:outline-none focus:ring active:bg-cyan-500"
           href="./docs/cv-jairvillalobos.pdf" target="_blank">
           Download CV
         </a>
@@ -46,7 +62,7 @@
     <div class="space-y-4">
       <details class="group border-s-4 border-green-500 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden" open>
         <summary class="flex cursor-pointer items-center justify-between gap-1.5">
-          <h2 class="text-2xl font-bold mb-4">Work experience</h2>
+          <h2 data-translate="titleexperience" class="text-2xl font-bold mb-4">Work experience</h2>
 
           <span class="shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
             <svg xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +75,7 @@
           </span>
         </summary>
 
-        <p class="mt-4 leading-relaxed text-gray-700">
+        <p data-translate="pworkExperience" class="mt-4 leading-relaxed text-gray-700">
           As a software developer with over 5 years of experience, I have gained expertise in a variety of technologies
           and frameworks.
           In my current role, I have worked with Go 🦫, FastAPI 🚀, the KrakenD framework 🐙, and AWS ☁️, and have
@@ -76,7 +92,7 @@
 
       <details class="group border-s-4 border-green-500 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
         <summary class="flex cursor-pointer items-center justify-between gap-1.5">
-          <h2 class="text-2xl font-bold mb-4">Education</h2>
+          <h2 data-translate="educationtitle" class="text-2xl font-bold mb-4">Education</h2>
           <span class="shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
             <svg xmlns="http://www.w3.org/2000/svg"
               class="h-5 w-5 shrink-0 transition duration-300 group-open:-rotate-45" viewBox="0 0 20 20"
@@ -89,30 +105,32 @@
         </summary>
         <div class=“bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col”>
           <div class=“mb-4”>
-            <h3 class=“text-xl font-semibold mb-2”><strong>National Learning Service (SENA)</strong></h3>
+            <h3 data-translate="senatitle" class=“text-xl font-semibold mb-2”>National Learning Service (SENA)</h3>
             <ul class=“list-none list-inside”>
-              <li>👨‍💻 Software programming technician (2021)</li>
-              <li>🧪 Software test management (2022)</li>
-              <li>🛠️ Technical support processes for the maintenance of computer equipment (2022)</li>
-              <li>💻 Web development with PHP (2021)</li>
-              <li>🗣️ Fundamentals of English A1 (2018)</li>
-              <li>💾 Computer Engineering (2022)</li>
+              <li data-translate="softwareProgrammingTechnician">👨‍💻 Software programming technician (2021)</li>
+              <li data-translate="softwareTestManagement">🧪 Software test management (2022)</li>
+              <li data-translate="technicalSupportProcesses">🛠️ Technical support processes for the maintenance of
+                computer equipment (2022)</li>
+              <li data-translate="webDevelopmentWithPHP">💻 Web development with PHP (2021)</li>
+              <li data-translate="fundamentalsOfEnglishA1">🗣️ Fundamentals of English A1 (2018)</li>
+              <li data-translate="computerEngineering">💾 Computer Engineering (2022)</li>
             </ul>
           </div>
           <div class=“mb-4”>
-            <h3 class=“text-xl font-semibold mb-2”><strong>OpenBootcamp</strong></h3>
+            <h3 class=“text-xl font-semibold mb-2”>OpenBootcamp</h3>
             <ul class=“list-none list-inside”>
-              <li>⚛️ Advanced ReactJS (2022)</li>
-              <li>🐍 Basic Python (2022)</li>
-              <li>🌐 HTML y CSS Basic (2022)</li>
-              <li>☕ Java Basic (2022)</li>
-              <li>👶 Introduction to programming (2022)</li>
+              <li data-translate="advancedReactJS">⚛️ Advanced ReactJS (2022)</li>
+              <li data-translate="basicPython">🐍 Basic Python (2022)</li>
+              <li data-translate="htmlAndCssBasic">🌐 HTML y CSS Basic (2022)</li>
+              <li data-translate="javaBasic">☕ Java Basic (2022)</li>
+              <li data-translate="introductionToProgramming">👶 Introduction to programming (2022)</li>
             </ul>
           </div>
           <div class=“mb-4”>
-            <h3 class=“text-xl font-semibold mb-2”><strong>Comfenalco Technological University Foundation</strong></h3>
+            <h3 data-translate="comfenalcoTitle" class=“text-xl font-semibold mb-2”>Comfenalco Technological University
+              Foundation</h3>
             <ul class=“list-none list-inside”>
-              <li>💻 software development technologist (2021-2023)</li>
+              <li data-translate="softwareDevelopmentTechnologist">💻 software development technologist (2021-2023)</li>
             </ul>
           </div>
         </div>
@@ -125,49 +143,20 @@
   <section class="bg-white-500 text-white" id="projects">
     <div class="mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
       <div class="mx-auto max-w-lg text-center">
-        <h2 class="text-3xl font-bold sm:text-4xl text-black">Projects</h2>
+        <h2 data-translate="projecttitle" class="text-3xl font-bold sm:text-4xl text-black">Projects</h2>
       </div>
 
       <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-        <!--<article
-          class="hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]">
-          <div class="rounded-[10px] bg-white p-4 !pt-20 sm:p-6">
-            <h3 class="font-bold uppercase text-gray-900 p-2 text-left">
-              <strong>TRANSVIAJES</strong>
-            </h3>
-            <hr>
-            <a href="https://github.com/mfs-jairvillalobos/TRANSVIAJES" target="_blank" class="p-2">
-              <h3 class="mt-0.5 text-sm font-medium text-gray-900">
-                It is a project control system created for a travel agency, which
-                is written in the programming language. In this project data
-                structures such as ArrayList are used to store information, it
-                must be said that given the nature of an ArrayList they do not
-                have persistence.
-              </h3>
-            </a>
-
-            <div class="mt-4 flex flex-wrap gap-1">
-              <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
-                ArrayList
-              </span>
-
-              <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
-                Java
-              </span>
-            </div>
-          </div>
-        </article> -->
-
         <article
           class="hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]">
           <div class="rounded-[10px] bg-white p-4 !pt-20 sm:p-6">
 
-            <h3 class="font-bold uppercase text-gray-900 p-2 text-left">
+            <h3 data-translate="rickandmortyClientTitle" class="font-bold uppercase text-gray-900 p-2 text-left">
               Rickandmorty Client
             </h3>
             <hr>
             <a href="https://github.com/mfs-jairvillalobos/rickandmorty-client" target="_blank" class="p-2">
-              <h3 class="mt-0.5 text-sm font-medium text-gray-900">
+              <h3 data-translate="rickandmortyClientDescription" class="mt-0.5 text-sm font-medium text-gray-900">
                 This is a client that uses React js and Styled Components to consume the Rick and Morty GraphQL API.
                 To get started, you should create an environment variable called env.local and paste the URL of the API.
                 The project includes several available scripts for development, testing, building, and ejecting.
@@ -196,12 +185,12 @@
           class="hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]">
           <div class="rounded-[10px] bg-white p-4 !pt-20 sm:p-6">
 
-            <h3 class="font-bold uppercase text-gray-900 p-2 text-left">
+            <h3 data-translate="todoAppTitle" class="font-bold uppercase text-gray-900 p-2 text-left">
               <strong>Todo-App</strong>
             </h3>
             <hr>
             <a href="https://github.com/mfs-jairvillalobos/todo-app" target="_blank" class="p-2">
-              <h3 class="mt-0.5 text-sm font-medium text-gray-900">
+              <h3 data-translate="todoAppDescription" class="mt-0.5 text-sm font-medium text-gray-900">
                 This studio project uses the PostgreSQL database management system and contains a Docker file to
                 facilitate its implementation. In addition,
                 it exposes two services: one for user authentication using JWT tokens (JSON Web Token) and another that
@@ -236,12 +225,12 @@
           class="hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]">
           <div class="rounded-[10px] bg-white p-4 !pt-20 sm:p-6">
 
-            <h3 class="font-bold uppercase text-gray-900 p-2 text-left">
+            <h3 data-translate="serviceEmployeeTitle" class="font-bold uppercase text-gray-900 p-2 text-left">
               <strong>Service Employee</strong>
             </h3>
             <hr>
             <a href="https://github.com/mfs-jairvillalobos/service_employee" target="_blank" class="p-2">
-              <h3 class="mt-0.5 text-sm font-medium text-gray-900">
+              <h3 data-translate="serviceEmployeeDescription" class="mt-0.5 text-sm font-medium text-gray-900">
                 This practice project consisted of creating an API to manage employee data. It was developed with Django
                 4.1.3, Django Rest Framework 3.14.0, and PostgreSQL. The API makes it easy and efficient to register,
                 edit, and delete employee information.
@@ -269,12 +258,12 @@
           class="hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]">
           <div class="rounded-[10px] bg-white p-4 !pt-20 sm:p-6">
 
-            <h3 class="font-bold uppercase text-gray-900 p-2 text-left">
+            <h3 data-translate="guiMotorciclystTitle" class="font-bold uppercase text-gray-900 p-2 text-left">
               GUI Motorciclyst
             </h3>
             <hr>
             <a href="https://github.com/mfs-jairvillalobos/GUI-motorciclyst" target="_blank" class="p-2">
-              <h3 class="mt-0.5 text-sm font-medium text-gray-900">
+              <h3 data-translate="guiMotorciclystDescription" class="mt-0.5 text-sm font-medium text-gray-900">
                 This is a GUI project with PyQt5 and SQLite that contains CRUD operations to manage information about
                 motorcyclists. It also includes a login system with a graphical interface.
               </h3>
@@ -301,12 +290,12 @@
           class="hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]">
           <div class="rounded-[10px] bg-white p-4 !pt-20 sm:p-6">
 
-            <h3 class="font-bold uppercase text-gray-900 p-2 text-left">
+            <h3 data-translate="dockerRebuildMonitorTitle" class="font-bold uppercase text-gray-900 p-2 text-left">
               docker-rebuild-monitor
             </h3>
             <hr>
             <a href="https://github.com/mfs-jairvillalobos/docker-rebuild-monitor" target="_blank" class="p-2">
-              <h3 class="mt-0.5 text-sm font-medium text-gray-900">
+              <h3 data-translate="dockerRebuildMonitorDescription" class="mt-0.5 text-sm font-medium text-gray-900">
                 This C++ program monitors a directory for changes in files and rebuilds a Docker image when a change is
                 detected. To compile and run this code, you will need to have a C++ compiler and Docker installed. The
                 code is provided under the MIT license.
@@ -335,12 +324,12 @@
           class="hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]">
           <div class="rounded-[10px] bg-white p-4 !pt-20 sm:p-6">
 
-            <h3 class="font-bold uppercase text-gray-900 p-2 text-left">
+            <h3 data-translate="encryptTitle" class="font-bold uppercase text-gray-900 p-2 text-left">
               Encrypt
             </h3>
             <hr>
             <a href="https://github.com/mfs-jairvillalobos/Encrypt" target="_blank" class="p-2">
-              <h3 class="mt-0.5 text-sm font-medium text-gray-900">
+              <h3 data-translate="encryptDescription" class="mt-0.5 text-sm font-medium text-gray-900">
                 Encrypt is a computer program written in Python 3 that allows file encryption.
                 It was created using the cryptography and PyQt5 libraries. Some useful commands
                 include installing the necessary packages, updating the graphical interface,
@@ -369,7 +358,7 @@
       <div class="mt-12 text-center">
         <a href="https://github.com/mfs-jairvillalobos" target="_blank"
           class="inline-flex items-center gap-2 rounded-full rounded bg-sky-900 px-12 py-3 text-lg font-medium text-white transition hover:bg-sky-900 focus:outline-none focus:ring focus:ring-white-400">
-          See more in Github
+          <p data-translate="btngithub">See more in Github</p>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-4 w-4">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
               d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
@@ -383,9 +372,10 @@
     class="max-w-screen-xl mt-24 px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto bg-gray-100 text-gray-900 rounded-lg shadow-lg">
     <div class="flex flex-col justify-between">
       <div>
-        <h2 class="text-4xl lg:text-2xl font-bold leading-tight">Hello! Do you need software development services?
+        <h2 data-translate="smsTitle" class="text-4xl lg:text-2xl font-bold leading-tight">Hello! Do you need software
+          development services?
         </h2>
-        <div class="text-gray-700 mt-8">
+        <div data-translate="smsDescription" class="text-gray-700 mt-8">
           My name is Jair Villalobos and I am here to help you. Leave me a message with your needs and I will contact
           you as soon as possible. I hope to have the opportunity to work with you!
         </div>
@@ -889,37 +879,39 @@
             <div class="py-2">
               <input type="text"
                 class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                name="name" id="name" placeholder="Name">
-              <div class="error hide">I processed the field Name</div>
+                name="name" id="name" placeholder="Name" data-translate="namePlaceholder">
+              <div class="error hide" data-translate="errFieldName">I processed the field Name</div>
             </div>
           </div>
           <div class="w-full md:w-1/2 px-3">
             <div class="py-2">
               <input type="email"
                 class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                name="email" id="email" placeholder="Email">
-              <div class="error hide">I processed the field Email</div>
+                name="email" id="email" placeholder="Email" data-translate="emailPlaceholder">
+              <div class="error hide" data-translate="errFieldEmail">I processed the field Email</div>
             </div>
           </div>
         </div>
         <div class="py-1">
           <input type="text"
             class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-            name="subject" id="subject" placeholder="Subject">
-          <div class="error hide">I processed the field Subject</div>
+            name="subject" id="subject" placeholder="Subject" data-translate="subjectPlaceholder">
+          <div class="error hide" data-translate="errFieldSubject">I processed the field Subject</div>
         </div>
         <div class="py-2">
-          <textarea
+          <textarea data-translate="messagePlaceholder" placeholder="Message"
             class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-            name="message" id="message" rows="6" placeholder="Message"></textarea>
-          <div class="error hide">I processed the field Message</div>
+            name="message" id="message" rows="6"></textarea>
+          <div class="error hide" data-translate="errFieldMessage">I processed the field Message</div>
         </div>
       </div>
       <div class="mt-2">
-        <input class="mt-0.5 text-lg font-medium text-gray-900" type="submit" id="button" value="Send">
+        <input class="mt-0.5 text-lg font-medium text-gray-900" type="submit" id="button" value="Send"
+          data-translate="btnsend">
         <div class="message">
-          <div class="success" id="success"></div>
-          <div class="danger" id="danger">An error occurred Your message could not be sent</div>
+          <div class="success" id="success" data-translate="smsSuccess"></div>
+          <div class="danger" id="danger" data-translate="smsError">An error occurred Your message could not be sent
+          </div>
         </div>
       </div>
     </form>
@@ -931,18 +923,18 @@
   <footer aria-label="Site Footer" class="bg-white">
     <div class="max-w-screen-xl px-4 pt-16 pb-8 mx-auto sm:px-6 lg:px-8 lg:pt-24">
       <div class="text-center">
-        <h2 class="text-3xl font-extrabold text-gray-900 sm:text-5xl">
+        <h2 data-translate="contactTitle" class="text-3xl font-extrabold text-gray-900 sm:text-5xl">
           Contact me
         </h2>
 
-        <p class="max-w-sm mx-auto mt-4 text-gray-500">
+        <p data-translate="contactDescrition" class="max-w-sm mx-auto mt-4 text-gray-500">
           i want to get in touch to hire your services
         </p>
 
         <div class="mt-12 text-center">
           <a href="https://api.whatsapp.com/send?phone=573013144203" target="_blank"
             class="inline-flex items-center gap-2 rounded-full rounded bg-green-500 px-12 py-3 text-sm font-medium text-white transition hover:bg-green-500 focus:outline-none focus:ring focus:ring-white-400">
-            talk to me about whatsapp
+            <p data-translate="btnwapsatp">talk to me about whatsapp</p>
             <svg fill="#fff" class="w-5 h-full text-white" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 308 308" xml:space="preserve">
               <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -1002,5 +994,6 @@
 </body>
 <script src="js/validForm.js"></script>
 <script src="js/typewriter.js"></script>
+<script type="module" src="js/index.js"></script>
 
 </html>
