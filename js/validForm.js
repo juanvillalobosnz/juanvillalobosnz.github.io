@@ -62,7 +62,7 @@ window.addEventListener("load", () => {
     shouldValidate = true;
     validateInputs();
     if (isFormValid) {
-      const serviceID = "default_servic";
+      const serviceID = "default_service";
       const templateID = "template_jmgbgzd";
 
       emailjs.sendForm(serviceID, templateID, form).then(
