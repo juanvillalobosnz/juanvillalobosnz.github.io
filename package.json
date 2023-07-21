@@ -8,8 +8,8 @@
   "description": "This project is a website personal",
   "main": "tailwind.config.js",
   "scripts": {
-    "dev": "npx tailwindcss -i ./public/css/main.css -o ./public/css/custom.css --watch",
-    "build": "tailwindcss -i ./public/css/main.css -o ./public/css/custom.css --minify"
+    "dev": "npx tailwindcss -i ./css/main.css -o ./css/custom.css --watch",
+    "build": "tailwindcss -i ./css/main.css -o ./css/custom.css --minify"
   },
   "author": "Jair villalobos",
   "license": "ISC"
