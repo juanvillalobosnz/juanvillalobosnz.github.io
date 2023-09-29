@@ -65,6 +65,9 @@ window.addEventListener("load", () => {
       if (response.length == 0) {
         //reCAPTCHA no completado
         document.getElementById("dangerreCAPTCHA").style.display = "block";
+        setTimeout(() => {
+          document.getElementById("dangerreCAPTCHA").style.display = "none";
+        }, 4000);
       } else {
         //reCAPTCHA completado
         const serviceID = "default_service";
@@ -75,16 +78,14 @@ window.addEventListener("load", () => {
             setTimeout(clearInputs, 2000);
             document.getElementById("success").style.display = "block";
           },
+          setTimeout(() => {
+            document.getElementById("success").style.display = "none";
+          }, 4000),
           (err) => {
             document.getElementById("danger").style.display = "block";
             console.log(JSON.stringify(err));
           }
         );
-
-        setTimeout(() => {
-          document.getElementById("danger").style.display = "none";
-          document.getElementById("success").style.display = "none";
-        }, 4000);
       }
     }
   });
