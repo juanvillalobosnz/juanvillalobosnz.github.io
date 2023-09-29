@@ -60,26 +60,38 @@ window.addEventListener("load", () => {
     shouldValidate = true;
     validateInputs();
     if (isFormValid) {
-      const serviceID = "default_service";
-      const templateID = "template_jmgbgzd";
+      // Verificar reCAPTCHA
+      var response = grecaptcha.getResponse();
+      if (response.length == 0) {
+        //reCAPTCHA no completado
+        document.getElementById('danger').innerHTML = "Por favor, completa el reCAPTCHA";
+        document.getElementById('danger').style.display = "block";
+      } else {
+        //reCAPTCHA completado
+        const serviceID = "default_service";
+        const templateID = "template_jmgbgzd";
 
-      emailjs.sendForm(serviceID, templateID, form).then(
-        () => {
-          setTimeout(clearInputs, 2000);
-          success.style.display = "block";
-        },
-        (err) => { 
-          danger.style.display = "block";
-          console.log(JSON.stringify(err));
-        }
-      );
+        emailjs.sendForm(serviceID, templateID, form).then(
+          () => {
+            setTimeout(clearInputs, 2000);
+            document.getElementById('success').innerHTML = "Mensaje enviado con éxito";
+            document.getElementById('success').style.display = "block";
+          },
+          (err) => {
+            document.getElementById('danger').innerHTML = "Ocurrió un error. Tu mensaje no pudo ser enviado";
+            document.getElementById('danger').style.display = "block";
+            console.log(JSON.stringify(err));
+          }
+        );
 
-      setTimeout(() => {
-        danger.style.display = "none";
-        success.style.display = "none";
-      }, 4000);
+        setTimeout(() => {
+          document.getElementById('danger').style.display = "none";
+          document.getElementById('success').style.display = "none";
+        }, 4000);
+      }
     }
   });
+
 
   inputFields.forEach((input) =>
     input.addEventListener("input", validateInputs)
