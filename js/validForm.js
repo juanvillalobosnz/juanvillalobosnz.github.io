@@ -56,7 +56,7 @@ window.addEventListener("load", () => {
   };
 
   form.addEventListener("submit", (e) => {
-    e.preventDefault();
+    e.preventDefault(); // Evita el comportamiento de envío predeterminado
     shouldValidate = true;
     validateInputs();
     if (isFormValid) {
@@ -91,7 +91,6 @@ window.addEventListener("load", () => {
       }
     }
   });
-
 
   inputFields.forEach((input) =>
     input.addEventListener("input", validateInputs)
