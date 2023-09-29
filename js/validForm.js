@@ -5,8 +5,8 @@ window.addEventListener("load", () => {
   const subjectInput = document.querySelector("input[name='subject']");
   const messageInput = document.querySelector("textarea[name='message']");
 
-
-  nameInput.isValid = () => isValidName(nameInput.value.trim() && nameInput.value.trim());
+  nameInput.isValid = () =>
+    isValidName(nameInput.value.trim() && nameInput.value.trim());
   emailInput.isValid = () => isValidEmail(emailInput.value.trim());
   subjectInput.isValid = () => isValidSubject(subjectInput.value.trim());
   messageInput.isValid = () => isValidMessage(messageInput.value.trim());
@@ -56,7 +56,7 @@ window.addEventListener("load", () => {
   };
 
   form.addEventListener("submit", (e) => {
-    e.preventDefault(); // Evita el comportamiento de envío predeterminado
+    e.preventDefault();
     shouldValidate = true;
     validateInputs();
     if (isFormValid) {
@@ -64,8 +64,7 @@ window.addEventListener("load", () => {
       var response = grecaptcha.getResponse();
       if (response.length == 0) {
         //reCAPTCHA no completado
-        document.getElementById('danger').innerHTML = "Por favor, completa el reCAPTCHA";
-        document.getElementById('danger').style.display = "block";
+        document.getElementById("dangerreCAPTCHA").style.display = "block";
       } else {
         //reCAPTCHA completado
         const serviceID = "default_service";
@@ -74,19 +73,17 @@ window.addEventListener("load", () => {
         emailjs.sendForm(serviceID, templateID, form).then(
           () => {
             setTimeout(clearInputs, 2000);
-            document.getElementById('success').innerHTML = "Mensaje enviado con éxito";
-            document.getElementById('success').style.display = "block";
+            document.getElementById("success").style.display = "block";
           },
           (err) => {
-            document.getElementById('danger').innerHTML = "Ocurrió un error. Tu mensaje no pudo ser enviado";
-            document.getElementById('danger').style.display = "block";
+            document.getElementById("danger").style.display = "block";
             console.log(JSON.stringify(err));
           }
         );
 
         setTimeout(() => {
-          document.getElementById('danger').style.display = "none";
-          document.getElementById('success').style.display = "none";
+          document.getElementById("danger").style.display = "none";
+          document.getElementById("success").style.display = "none";
         }, 4000);
       }
     }
