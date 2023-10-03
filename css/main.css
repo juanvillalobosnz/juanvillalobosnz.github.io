@@ -215,11 +215,11 @@ estilos validacion  del formulario
 }
 
 /* CSS */
-input:checked ~ .dot {
+input:checked~.dot {
   transform: translateX(100%);
 }
 
-input:checked ~ .block {
+input:checked~.block {
   background-color: #34d399;
 }
 
