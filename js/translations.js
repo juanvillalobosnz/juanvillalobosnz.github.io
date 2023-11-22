@@ -3,7 +3,7 @@ const translations = {
     en: {
       home: "Home",
       projects: "Projects",
-      tagline: "I am a software developer",
+      tagline: "I am a back-end developer",
       btncv:"Download CV",
       titleexperience: "Work experience",
       pworkExperience: "As a software developer with over 5 years of experience, I have gained expertise in a variety of technologies and frameworks. In my current role, I have worked with Go 🦫, FastAPI 🚀, the KrakenD framework 🐙, and AWS ☁️, and have developed components using Flutter 🦋 for about 10 months. My knowledge in these areas has allowed me to create efficient and scalable solutions for my clients, using best practices and agile methodologies. In addition to my current role, I have extensive experience with Python 3 🐍, Django 🦄, GNU/Linux 🐧, DRF 📡, Docker 🐳, PostgreSQL 🐘, and MySQL 🐬. I am also proficient in using GitHub 🐱 for version control and collaboration. Furthermore, I am an apprentice of Go 🦫 and React.js ⚛️, constantly striving to expand my skill set and stay up-to-date with the latest technologies.",
@@ -57,7 +57,7 @@ const translations = {
     es: {
       home: "Inicio",
       projects: "Proyectos",
-      tagline: "Soy un desarrollador de software",
+      tagline: "Soy un desarrollador de back-end",
       btncv:"Descargar currículum",
       titleexperience: "Experiencia laboral",
       pworkExperience: "Como desarrollador de software con más de 5 años de experiencia, he adquirido experiencia en una variedad de tecnologías y marcos. En mi rol actual, trabajé con Go 🦫, FastAPI 🚀, el marco KrakenD 🐙 y AWS ☁️, y desarrollé componentes usando Flutter 🦋 durante aproximadamente 10 meses. Mi conocimiento en estas áreas me ha permitido crear soluciones eficientes y escalables para mis clientes, utilizando mejores prácticas y metodologías ágiles. Además de mi rol actual, tengo amplia experiencia con Python 3 🐍, Django 🦄, GNU/Linux 🐧, DRF 📡, Docker 🐳, PostgreSQL 🐘 y MySQL 🐬. También soy competente en el uso de GitHub 🐱 para control de versiones y colaboración. Además, soy aprendiz de Go 🦫 y React.js ⚛️ y me esfuerzo constantemente por ampliar mi conjunto de habilidades y mantenerme actualizado con las últimas tecnologías.",
