@@ -19,7 +19,11 @@
       <li class="hidden lg:block">
         <a data-translate="home" class="rounded-full px-3 py-2" href="index.html">Home</a>
       </li>
-      
+
+      <li>
+        <a data-translate="projects" class="rounded-full px-3 py-2" href="#projects">Projects</a>
+      </li>
+
       <label for="toggleLanguage" class="flex items-center cursor-pointer">
         <div class="relative hidden">
           <input type="checkbox" id="toggleLanguage" class="sr-only" />
@@ -39,7 +43,7 @@
       <div class="mx-auto max-w-3xl text-center">
         <h1
           class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl">
-          <span data-translate="tagline" class="sm:blocka">I am a Back-End Developer</span>
+          <span data-translate="tagline" class="sm:blocka">I am a back-end developer</span>
         </h1>
         <p id="typewriter" class="typewriter mx-auto mt-4 max-w-xl sm:text-xl sm:leading-relaxed"></p>
 
@@ -133,7 +137,82 @@
 
     </div>
   </div>
-  
+
+  <!--PROJECTS-->
+  <section class="bg-white-500 text-white" id="projects">
+    <div class="mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
+      <div class="mx-auto max-w-lg text-center">
+        <h2 data-translate="projecttitle" class="text-3xl font-bold sm:text-4xl text-black">Projects</h2>
+      </div>
+
+      <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <article class="rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]">
+          <div class="rounded-[10px] bg-white p-4 !pt-20 sm:p-6">
+            <h3 class="font-bold uppercase text-gray-900 p-2 text-left">
+              <a href="https://tigomoney.com/gt/home-gt" data-translate="todoAppTitle" target="_blank">
+                Tigo Money Wallet</a>
+            </h3>
+            <hr>
+            <p data-translate="todoAppDescription" class="mt-0.5 text-sm font-medium text-gray-900 p-2">
+              Tigo Money, an innovative digital wallet that allows users to make transactions quickly and securely from their mobile devices.
+            </p>
+            <div class="mt-4 flex flex-wrap gap-1">
+              <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">Go</span>
+              <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">KrakenD API Gateway</span>
+              <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">Amazon Web Services (AWS)</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]">
+          <div class="rounded-[10px] bg-white p-4 !pt-20 sm:p-6">
+            <h3 class="font-bold uppercase text-gray-900 p-2 text-left">
+              <a href="https://jairvillalobos-rickandmorty-client.netlify.app/" data-translate="rickandmortyClientTitle" target="_blank">Rickandmorty Client</a>
+            </h3>
+            <hr>
+            <p data-translate="rickandmortyClientDescription" class="mt-0.5 text-sm font-medium text-gray-900 p-2">
+              A client using React js and Styled Components to consume the Rick and Morty GraphQL API.
+            </p>
+            <div class="mt-4 flex flex-wrap gap-1">
+              <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">React js</span>
+              <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">Styled Components</span>
+              <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">Rick and Morty GraphQL API</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]">
+          <div class="rounded-[10px] bg-white p-4 !pt-20 sm:p-6">
+            <h3 class="font-bold uppercase text-gray-900 p-2 text-left">
+              <a href="https://github.com/jairvillalobos/facturaexpress" data-translate="serviceEmployeeTitle" target="_blank">facturaexpress</a>
+            </h3>
+            <hr>
+            <p data-translate="serviceEmployeeDescription" class="mt-0.5 text-sm font-medium text-gray-900 p-2">
+              It is an API written in Go that allows users to create and manage invoices, with fields for company information, services, total value and operator details.
+            </p>
+            <div class="mt-4 flex flex-wrap gap-1">
+              <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">Go</span>
+              <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">Gin</span>
+              <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">PostgreSQL</span>
+            </div>
+          </div>
+        </article>
+      </div>
+      
+
+      <div class="mt-12 text-center">
+        <a href="https://github.com/jairvillalobos" target="_blank"
+          class="inline-flex items-center gap-2 rounded-full rounded bg-sky-900 px-12 py-3 text-lg font-medium text-white transition hover:bg-sky-900 focus:outline-none focus:ring focus:ring-white-400">
+          <p data-translate="btngithub">See more in Github</p>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-4 w-4">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <div
     class="max-w-screen-xl mt-24 px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto bg-gray-100 text-gray-900 rounded-lg shadow-lg">
     <div class="flex flex-col justify-between">
