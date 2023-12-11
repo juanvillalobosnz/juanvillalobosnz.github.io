@@ -3,7 +3,7 @@ const translations = {
     en: {
       home: "Home",
       projects: "Projects",
-      tagline: "I am a back-end developer",
+      tagline: "I am a full stack web developer",
       btncv:"Download CV",
       titleexperience: "Work experience",
       pworkExperience: "More than 5 years of experience in full stack software development. Specialist in REST APIs, databases and languages such as React, Golang and Python. Knowledge in IT technical support.Design and implementation of scalable RESTful APIs with focus on performance, security and best practices. Integration with API Gateways through plugin development. Integral participation in the lifecycle of high traffic web and mobile applications. Agile methodologies. Commitment to continuous learning and professional growth. Focus on delivering high value technology solutions that enhance business success.", educationtitle: "Education",
@@ -50,7 +50,7 @@ const translations = {
     es: {
       home: "Inicio",
       projects: "Proyectos",
-      tagline: "Soy un desarrollador de back-end",
+      tagline: "Soy desarrollador web full stack",
       btncv:"Descargar currículum",
       titleexperience: "Experiencia laboral",
       pworkExperience: "Más de 5 años de experiencia en desarrollo de software full stack. Especialista en API REST, bases de datos y lenguajes como React, Golang y Python. Conocimientos en soporte técnico TI. Diseño e implementación de API RESTful escalables con enfoque en rendimiento, seguridad y mejores prácticas. Integración con API Gateways mediante desarrollo de plugins. Participación integral en el ciclo de vida de aplicaciones web y móviles de alto tráfico. Metodologías ágiles. Compromiso con el aprendizaje continuo y el crecimiento profesional. Centrarse en ofrecer soluciones tecnológicas de alto valor que mejoren el éxito empresarial.",
