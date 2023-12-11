@@ -6,7 +6,13 @@ const translations = {
       tagline: "I am a back-end developer",
       btncv:"Download CV",
       titleexperience: "Work experience",
-      pworkExperience: "As a software developer with over 5 years of experience, I have gained expertise in a variety of technologies and frameworks. In my current role, I have worked with Go 🦫, FastAPI 🚀, the KrakenD framework 🐙, and AWS ☁️, and have developed components using Flutter 🦋 for about 10 months. My knowledge in these areas has allowed me to create efficient and scalable solutions for my clients, using best practices and agile methodologies. In addition to my current role, I have extensive experience with Python 3 🐍, Django 🦄, GNU/Linux 🐧, DRF 📡, Docker 🐳, PostgreSQL 🐘, and MySQL 🐬. I am also proficient in using GitHub 🐱 for version control and collaboration. Furthermore, I am an apprentice of Go 🦫 and React.js ⚛️, constantly striving to expand my skill set and stay up-to-date with the latest technologies.",
+      pworkExperience: "More than 5 years of experience in full stack software development. Specialist in REST APIs, databases and languages such as React, Golang and Python. Knowledge in IT technical support.
+
+Design and implementation of scalable RESTful APIs with focus on performance, security and best practices. Integration with API Gateways through plugin development.
+
+Integral participation in the lifecycle of high traffic web and mobile applications. Agile methodologies.
+
+Commitment to continuous learning and professional growth. Focus on delivering high value technology solutions that enhance business success.",
       educationtitle: "Education",
       senatitle:"National Learning Service (SENA)",
       softwareProgrammingTechnician: "👨‍💻 Software programming technician (2021)",
@@ -54,7 +60,7 @@ const translations = {
       tagline: "Soy un desarrollador de back-end",
       btncv:"Descargar currículum",
       titleexperience: "Experiencia laboral",
-      pworkExperience: "Como desarrollador de software con más de 5 años de experiencia, he adquirido experiencia en una variedad de tecnologías y marcos. En mi rol actual, trabajé con Go 🦫, FastAPI 🚀, el marco KrakenD 🐙 y AWS ☁️, y desarrollé componentes usando Flutter 🦋 durante aproximadamente 10 meses. Mi conocimiento en estas áreas me ha permitido crear soluciones eficientes y escalables para mis clientes, utilizando mejores prácticas y metodologías ágiles. Además de mi rol actual, tengo amplia experiencia con Python 3 🐍, Django 🦄, GNU/Linux 🐧, DRF 📡, Docker 🐳, PostgreSQL 🐘 y MySQL 🐬. También soy competente en el uso de GitHub 🐱 para control de versiones y colaboración. Además, soy aprendiz de Go 🦫 y React.js ⚛️ y me esfuerzo constantemente por ampliar mi conjunto de habilidades y mantenerme actualizado con las últimas tecnologías.",
+      pworkExperience: "Más de 5 años de experiencia en desarrollo de software full stack. Especialista en API REST, bases de datos y lenguajes como React, Golang y Python. Conocimientos en soporte técnico TI. Diseño e implementación de API RESTful escalables con enfoque en rendimiento, seguridad y mejores prácticas. Integración con API Gateways mediante desarrollo de plugins. Participación integral en el ciclo de vida de aplicaciones web y móviles de alto tráfico. Metodologías ágiles. Compromiso con el aprendizaje continuo y el crecimiento profesional. Centrarse en ofrecer soluciones tecnológicas de alto valor que mejoren el éxito empresarial.",
       educationtitle: "Educación",
       senatitle:"Servicio Nacional de Aprendizaje (SENA)",
       softwareProgrammingTechnician: "👨‍💻 Técnico en programación de software (2021)",
