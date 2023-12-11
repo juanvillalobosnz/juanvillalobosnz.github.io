@@ -6,14 +6,7 @@ const translations = {
       tagline: "I am a back-end developer",
       btncv:"Download CV",
       titleexperience: "Work experience",
-      pworkExperience: "More than 5 years of experience in full stack software development. Specialist in REST APIs, databases and languages such as React, Golang and Python. Knowledge in IT technical support.
-
-Design and implementation of scalable RESTful APIs with focus on performance, security and best practices. Integration with API Gateways through plugin development.
-
-Integral participation in the lifecycle of high traffic web and mobile applications. Agile methodologies.
-
-Commitment to continuous learning and professional growth. Focus on delivering high value technology solutions that enhance business success.",
-      educationtitle: "Education",
+      pworkExperience: "More than 5 years of experience in full stack software development. Specialist in REST APIs, databases and languages such as React, Golang and Python. Knowledge in IT technical support.Design and implementation of scalable RESTful APIs with focus on performance, security and best practices. Integration with API Gateways through plugin development. Integral participation in the lifecycle of high traffic web and mobile applications. Agile methodologies. Commitment to continuous learning and professional growth. Focus on delivering high value technology solutions that enhance business success.", educationtitle: "Education",
       senatitle:"National Learning Service (SENA)",
       softwareProgrammingTechnician: "👨‍💻 Software programming technician (2021)",
       softwareTestManagement: "🧪 Software test management (2022)",
