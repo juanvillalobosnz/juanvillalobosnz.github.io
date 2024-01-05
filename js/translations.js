@@ -50,7 +50,7 @@ const translations = {
     es: {
       home: "Inicio",
       projects: "Proyectos",
-      tagline: "Ingeniero Backend (APIs y Microservicios) | Go, Python y TypeScript | AWS, Docker, Kubernetes | Entusiasta de la seguridad",
+      tagline: "Ingeniero Pila completa (APIs y Microservicios) | Go, Python y TypeScript | AWS, Docker, Kubernetes | Entusiasta de la seguridad",
       btncv:"Descargar currículum",
       titleexperience: "Experiencia laboral",
       pworkExperience: "Más de 5 años de experiencia en desarrollo back-end. Especialista en API REST, bases de datos y lenguajes como React, Golang y Python. Conocimientos en soporte técnico TI. Diseño e implementación de API RESTful escalables con enfoque en rendimiento, seguridad y mejores prácticas. Integración con API Gateways mediante desarrollo de plugins. Participación integral en el ciclo de vida de aplicaciones web y móviles de alto tráfico. Metodologías ágiles. Compromiso con el aprendizaje continuo y el crecimiento profesional. Centrarse en ofrecer soluciones tecnológicas de alto valor que mejoren el éxito empresarial.",
