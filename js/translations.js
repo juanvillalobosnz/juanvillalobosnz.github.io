@@ -3,10 +3,10 @@ const translations = {
     en: {
       home: "Home",
       projects: "Projects",
-      tagline: "Full Stack Engineer (APIs & Microservices) | Go, Python & TypeScript | AWS, Docker, Kubernetes | Security Enthusiast",
+      tagline: "Software Engineer | Backend | Python | Go | TypeScript",
       btncv:"Download CV",
       titleexperience: "Work experience",
-      pworkExperience: "More than 5 years of experience in Full Stack development. Specialist in REST APIs, databases and languages such as React, Golang and Python. Knowledge in IT technical support.Design and implementation of scalable RESTful APIs with focus on performance, security and best practices. Integration with API Gateways through plugin development. Integral participation in the lifecycle of high traffic web and mobile applications. Agile methodologies. Commitment to continuous learning and professional growth. Focus on delivering high value technology solutions that enhance business success.", educationtitle: "Education",
+      pworkExperience: "More than 5 years of experience in software development. Specialist in REST APIs, databases and languages such as Python, Golang and TypeScript. Knowledge in IT technical support.Design and implementation of scalable RESTful APIs with focus on performance, security and best practices. Integration with API Gateways through plugin development. Integral participation in the lifecycle of high traffic web and mobile applications. Agile methodologies. Commitment to continuous learning and professional growth. Focus on delivering high value technology solutions that enhance business success.", educationtitle: "Education",
       senatitle:"National Learning Service (SENA)",
       softwareProgrammingTechnician: "👨‍💻 Software programming technician (2021)",
       softwareTestManagement: "🧪 Software test management (2022)",
@@ -50,7 +50,7 @@ const translations = {
     es: {
       home: "Inicio",
       projects: "Proyectos",
-      tagline: "Ingeniero Pila completa (APIs y Microservicios) | Go, Python y TypeScript | AWS, Docker, Kubernetes | Entusiasta de la seguridad",
+      tagline: "Ingeniero de software | Backend | Python | Go | TypeScript",
       btncv:"Descargar currículum",
       titleexperience: "Experiencia laboral",
       pworkExperience: "Más de 5 años de experiencia en desarrollo de Pila completa. Especialista en API REST, bases de datos y lenguajes como React, Golang y Python. Conocimientos en soporte técnico TI. Diseño e implementación de API RESTful escalables con enfoque en rendimiento, seguridad y mejores prácticas. Integración con API Gateways mediante desarrollo de plugins. Participación integral en el ciclo de vida de aplicaciones web y móviles de alto tráfico. Metodologías ágiles. Compromiso con el aprendizaje continuo y el crecimiento profesional. Centrarse en ofrecer soluciones tecnológicas de alto valor que mejoren el éxito empresarial.",
