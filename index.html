@@ -171,50 +171,28 @@
         <h2>Contáctame</h2>
         <form>
           <label for="name">Nombre</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Tu nombre"
-          />
-          <div class="error hide">Por favor, introduce un nombre válido.</div>
+          <input type="text" id="name" name="name" placeholder="Tu nombre" />
+          <div class="error hide">Por favor, introduce tu nombre. Debe tener al menos 3 caracteres.</div>
 
           <label for="email">Correo electrónico</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Tu correo electrónico"
-          />
-          <div class="error hide">Por favor, introduce un correo electrónico válido.</div>
-
+          <input type="email" id="email" name="email" placeholder="Tu correo electrónico" />
+          <div class="error hide">Por favor, introduce un correo electrónico válido. Por ejemplo: nombre@dominio.com</div>
 
           <label for="subject">Asunto</label>
-          <input
-            type="text"
-            id="subject"
-            name="subject"
-            placeholder="Asunto"
-          />
-          <div class="error hide">Por favor, introduce un Asunto válido.</div>
+          <input type="text" id="subject" name="subject" placeholder="Asunto" />
+          <div class="error hide">Por favor, introduce un asunto. Debe tener al menos 8  caracteres.</div>
 
-          <label for="message"></label>
-          <textarea
-            id="message"
-            name="message"
-            rows="5"
-            placeholder="Tu mensaje"
-          ></textarea>
-          <div class="error hide">Por favor, introduce un Mensaje válido.</div>
-          
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tu mensaje"></textarea>
+          <div class="error hide">Por favor, introduce tu mensaje. Debe tener al menos 10 caracteres.</div>
 
           <button type="submit">Enviar Mensaje</button>
 
-          <div class="success hide hidden" id="success">Mensaje enviando con exito</div>
-          <div class="danger hide hidden"  id="danger">Error por favor intente de nuevo </div>
-          <div class="danger hide hidden"  id="dangerreCAPTCHA">Error de recaptcha</div>
-
-        <div class="g-recaptcha" data-sitekey="6LcHgmAoAAAAABqzvM_8kfHjolbeYxOHn2ogAX6d"></div>
+          <div class="success hide hidden" id="success">¡Genial! Tu mensaje ha sido enviado con éxito. 😊</div>
+          <div class="danger hide hidden" id="danger">Ups! Algo salió mal. Por favor, inténtalo de nuevo. 😕</div>
+          <div class="danger hide hidden" id="dangerreCAPTCHA">Parece que hubo un problema con el reCAPTCHA. Por favor, verifica que lo has completado correctamente. 🤖</div>
+          
+          <div class="g-recaptcha" data-sitekey="6LcHgmAoAAAAABqzvM_8kfHjolbeYxOHn2ogAX6d"></div>
 
         </form>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
