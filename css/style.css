@@ -1,11 +1,7 @@
-/* Paleta de colores */
-:root {
-  --primary-color: #5e9fa3;
-  --secondary-color: #f87e7b;
-  --accent-color: #fab87f;
-  --neutral-color: #dcd1b4;
-  --dark-color: #333;
-}
+/* styles.css */
+
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 /* Estilos globales */
 * {
@@ -15,35 +11,45 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.6;
   color: var(--dark-color);
   background-color: var(--neutral-color);
+}
+
+/* Paleta de colores */
+:root {
+  --primary-color: #5e9fa3;
+  --secondary-color: #f87e7b;
+  --accent-color: #fab87f;
+  --neutral-color: #f8f4ea;
+  --dark-color: #333;
 }
 
 /* Estilos del encabezado */
 header {
   background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
   color: #fff;
-  padding: 20px;
+  padding: 50px 20px;
   text-align: center;
   position: relative;
   overflow: hidden;
-  min-height: 50vh;
+  min-height: 70vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-header:before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 70%);
-  animation: wave 10s infinite linear;
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+header p {
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 /* Estilos del navbar */
@@ -55,6 +61,8 @@ nav {
   background-color: var(--dark-color);
   z-index: 100;
   transition: background-color 0.3s;
+  padding: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .nav-container {
@@ -69,7 +77,7 @@ nav {
 .nav-logo {
   color: #fff;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 
@@ -129,91 +137,27 @@ nav.scrolled {
   background-color: var(--primary-color);
 }
 
-/* Animaciones */
-@keyframes wave {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Estilos responsivos */
-@media (max-width: 768px) {
-  .nav-menu {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background-color: var(--dark-color);
-    padding: 20px 0;
-  }
-
-  .nav-menu li {
-    margin: 10px 0;
-  }
-
-  .nav-toggle {
-    display: block;
-  }
-
-  .nav-toggle.active span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-  }
-
-  .nav-toggle.active span:nth-child(2) {
-    opacity: 0;
-  }
-
-  .nav-toggle.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
-  }
-}
-
-/* Estilos para la animación de desplazamiento */
-section, article, aside {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 0.8s, transform 0.8s;
-}
-
-section.animate, article.animate, aside.animate {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 /* Estilos del contenido principal */
 main {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 40px 20px;
 }
 
-section, article, aside {
+section,
+article,
+aside {
   margin-bottom: 40px;
   background-color: #fff;
-  padding: 20px;
+  padding: 30px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
+  border-radius: 8px;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-section:hover, article:hover, aside:hover {
+section:hover,
+article:hover,
+aside:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
@@ -221,6 +165,8 @@ section:hover, article:hover, aside:hover {
 h2 {
   margin-bottom: 20px;
   color: var(--primary-color);
+  text-align: center;
+  font-size: 2.5rem;
 }
 
 ul {
@@ -238,6 +184,16 @@ ul {
   text-align: center;
   margin: 20px;
   max-width: 300px;
+  padding: 20px;
+  background-color: #f8f4ea;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.skill:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .skill img {
@@ -245,10 +201,16 @@ ul {
   height: auto;
 }
 
+.skill h3 {
+  margin-top: 20px;
+  color: var(--primary-color);
+}
+
 /* Estilos del formulario de contacto */
 form label {
   display: block;
   margin-bottom: 5px;
+  font-weight: 500;
 }
 
 form input,
@@ -258,6 +220,7 @@ form textarea {
   margin-bottom: 20px;
   border: 1px solid var(--primary-color);
   border-radius: 4px;
+  font-family: inherit;
 }
 
 form button {
@@ -268,6 +231,8 @@ form button {
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
+  font-family: inherit;
+  font-weight: 500;
 }
 
 form button:hover {
@@ -298,6 +263,8 @@ button:hover:before {
 /* Estilos para el efecto de hover en enlaces */
 a {
   position: relative;
+  color: var(--primary-color);
+  text-decoration: none;
 }
 
 a:before {
@@ -344,4 +311,76 @@ footer a:before {
 
 footer a:hover:before {
   width: 100%;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: var(--dark-color);
+    padding: 20px 0;
+  }
+
+  .nav-menu li {
+    margin: 10px 0;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .nav-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+}
+
+/* Animaciones */
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Estilos para la animación de desplazamiento */
+section,
+article,
+aside {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s, transform 0.8s;
+}
+
+section.animate,
+article.animate,
+aside.animate {
+  opacity: 1;
+  transform: translateY(0);
 }
