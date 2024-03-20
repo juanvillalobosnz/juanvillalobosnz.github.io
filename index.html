@@ -14,6 +14,8 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="js/validForm.js"></script>
   </head>
 
   <body>
@@ -167,12 +169,6 @@
 
       <section id="contact">
         <h2>Contáctame</h2>
-        <p>¡Hola! ¿Necesitas servicios de desarrollo de software?</p>
-        <p>
-          Mi nombre es Juan Villalobos y estoy aquí para ayudarte. Déjame un
-          mensaje con tus necesidades y me pondré en contacto contigo lo antes
-          posible. ¡Espero tener la oportunidad de trabajar contigo!
-        </p>
         <form>
           <label for="name">Nombre</label>
           <input
@@ -180,8 +176,8 @@
             id="name"
             name="name"
             placeholder="Tu nombre"
-            required
           />
+          <div class="error hide">Por favor, introduce un nombre válido.</div>
 
           <label for="email">Correo electrónico</label>
           <input
@@ -189,8 +185,9 @@
             id="email"
             name="email"
             placeholder="Tu correo electrónico"
-            required
           />
+          <div class="error hide">Por favor, introduce un correo electrónico válido.</div>
+
 
           <label for="subject">Asunto</label>
           <input
@@ -198,20 +195,30 @@
             id="subject"
             name="subject"
             placeholder="Asunto"
-            required
           />
+          <div class="error hide">Por favor, introduce un Asunto válido.</div>
 
-          <label for="message">Mensaje</label>
+          <label for="message"></label>
           <textarea
             id="message"
             name="message"
             rows="5"
             placeholder="Tu mensaje"
-            required
           ></textarea>
+          <div class="error hide">Por favor, introduce un Mensaje válido.</div>
+          
 
           <button type="submit">Enviar Mensaje</button>
+
+          <div class="success hide hidden" id="success">Mensaje enviando con exito</div>
+          <div class="danger hide hidden"  id="danger">Error por favor intente de nuevo </div>
+          <div class="danger hide hidden"  id="dangerreCAPTCHA">Error de recaptcha</div>
+
+        <div class="g-recaptcha" data-sitekey="6LcHgmAoAAAAABqzvM_8kfHjolbeYxOHn2ogAX6d"></div>
+
         </form>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">emailjs.init('q8T-AVyWr8tG1LEU4')</script>
       </section>
     </main>
 
@@ -229,5 +236,6 @@
       });
     </script>
     <script src="js/anaimation.js"></script>
+    
   </body>
 </html>
