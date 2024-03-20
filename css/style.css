@@ -433,3 +433,7 @@ textarea + div.error {
   font-size: 0.875rem;
   margin-top: 0.25rem;
 }
+
+.g-recaptcha{
+  margin-top: 20px;
+}
