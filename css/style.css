@@ -1,7 +1,7 @@
 /* styles.css */
 
 /* Fuentes */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 /* Estilos globales */
 * {
@@ -11,7 +11,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 1.6;
   color: var(--dark-color);
   background-color: var(--neutral-color);
@@ -28,7 +28,11 @@ body {
 
 /* Estilos del encabezado */
 header {
-  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--secondary-color)
+  );
   color: #fff;
   padding: 50px 20px;
   text-align: center;
@@ -217,7 +221,6 @@ form input,
 form textarea {
   width: 100%;
   padding: 10px;
-  margin-bottom: 20px;
   border: 1px solid var(--primary-color);
   border-radius: 4px;
   font-family: inherit;
@@ -226,6 +229,7 @@ form textarea {
 form button {
   background-color: var(--primary-color);
   color: #fff;
+  margin-top: 15px;
   border: none;
   padding: 10px 20px;
   border-radius: 4px;
@@ -246,7 +250,7 @@ button {
 }
 
 button:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
@@ -268,7 +272,7 @@ a {
 }
 
 a:before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -431,9 +435,9 @@ input + div.error,
 textarea + div.error {
   color: #dc3545;
   font-size: 0.875rem;
-  margin-top: 0.25rem;
+  margin-block: 12px;
 }
 
-.g-recaptcha{
+.g-recaptcha {
   margin-top: 20px;
 }
