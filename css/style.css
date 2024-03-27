@@ -26,6 +26,42 @@ body {
   --dark-color: #333;
 }
 
+/* Estilos para el área del hero */
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Estilos para los enlaces de redes sociales */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icon {
+  display: inline-block;
+  margin: 0 0.5rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+.social-icon svg {
+  width: 2em;
+  height: 2em;
+  fill: #ffffff; /* Cambiar el color de los iconos */
+}
+
+
+
 /* Estilos del encabezado */
 header {
   background: linear-gradient(
@@ -472,4 +508,129 @@ textarea + div.error {
   color: #dc3545;
   font-size: 0.875rem;
   margin-bottom: 12px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.theme-checkbox {
+  display: none;
+}
+
+.theme-icon {
+  cursor: pointer;
+}
+
+/* Tema oscuro */
+body.dark-theme {
+  --primary-color: #1c2020; /* Original: #5e9fa3 */
+  --secondary-color: #f86262; /* Original: #f87e7b */
+  --accent-color: #fab87f; /* Original: #fab87f */
+  --neutral-color: #262323; /* Original: #f8f4ea */
+  --dark-color: #242423; /* Original: #333 */
+  --text-color: #f5f5f5; /* Color de texto claro */
+}
+
+body.dark-theme {
+  color: var(--text-color);
+  background-color: var(--neutral-color);
+}
+
+body.dark-theme header {
+  background: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: var(--text-color); /* Color de texto claro para el encabezado */
+}
+
+body.dark-theme nav {
+  background-color: var(--dark-color);
+}
+
+body.dark-theme nav.scrolled {
+  background-color: var(--primary-color);
+}
+
+body.dark-theme section,
+body.dark-theme article,
+body.dark-theme aside {
+  background-color: var(--dark-color);
+}
+
+body.dark-theme .skill {
+  background-color: var(--dark-color);
+}
+
+body.dark-theme form input,
+body.dark-theme form textarea {
+  background-color: var(--dark-color);
+  border-color: var(--neutral-color);
+  border-color: var(--text-color); /* Color de borde claro */
+  color: var(--text-color); /* Color de texto claro */
+}
+
+body.dark-theme form button {
+  background-color: var(--text-color);
+  color: var(--dark-color);
+}
+
+body.dark-theme form button:hover {
+  background-color: var(--secondary-color);
+}
+
+body.dark-theme footer {
+  background-color: var(--dark-color);
+}
+
+body.dark-theme footer a {
+  color: var(--text-color);
+}
+
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme h4,
+body.dark-theme h5,
+body.dark-theme h6 {
+  color: var(--text-color); /* Color de texto claro para los títulos */
+}
+
+body.dark-theme form label {
+  color: var(--text-color); /* Color de texto claro para las etiquetas del formulario */
+}
+
+body.dark-theme .success {
+  background-color: var(--neutral-color);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+body.dark-theme .danger {
+  background-color: var(--neutral-color);
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
 }
