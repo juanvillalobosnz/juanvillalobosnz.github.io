@@ -177,6 +177,26 @@ nav.scrolled {
   background-color: var(--primary-color);
 }
 
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--dark-color);
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+}
+
 /* Estilos del contenido principal */
 main {
   max-width: 1200px;
@@ -543,7 +563,10 @@ textarea + div.error {
   cursor: pointer;
 }
 
-/* Tema oscuro */
+body {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
 body.dark-theme {
   --primary-color: #1c2020; /* Original: #5e9fa3 */
   --secondary-color: #f86262; /* Original: #f87e7b */
@@ -633,4 +656,13 @@ body.dark-theme .danger {
   background-color: var(--neutral-color);
   color: var(--secondary-color);
   border: 1px solid var(--secondary-color);
+}
+
+/* Mejoras sugeridas */
+body.dark-theme img {
+  filter: brightness(0.8);
+}
+
+body.dark-theme a {
+  color: var(--accent-color);
 }
